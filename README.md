@@ -1,46 +1,75 @@
 # pytest
+
 All about the Pytest framework.
 
 ## Virtual env setup
 
 ### Windows
+
 - Create an virtual env using venv module.
-    ```shell
-    cd C:\python311
-    python.exe -m venv %USERPROFILE%\venvs\frameworkenv
-    ```
+  ```shell
+  cd C:\python311
+  python.exe -m venv %USERPROFILE%\venvs\frameworkenv
+  ```
 - Activate the virtual env using 'activate' exe within Scripts dir.
-    ```shell
-    cd %USERPROFILE%\venvs\frameworkenv\Scripts
-    activate
-    ```
+
+  ```shell
+  cd %USERPROFILE%\venvs\frameworkenv\Scripts
+  activate
+
+  or
+
+  %USERPROFILE%\venvs\frameworkenv\Scripts\activate
+  ```
+
 - Verify the Python version within new virtual env.
-    ```shell
-    (frameworkenv) C:\Users\jagadeesh\venvs\frameworkenv\Scripts>python --version
-    Python 3.11.2
-    ```
+
+  ```shell
+  (frameworkenv) C:\Users\jagadeesh\venvs\frameworkenv\Scripts>python --version
+  Python 3.11.2
+  ```
 
 - Deactivate the virtual env using the deactivate executable.
-    ```shell
-    (frameworkenv) C:\Users\jagadeesh\venvs\frameworkenv\Scripts> deactivate
-    ```
+
+  ```shell
+  (frameworkenv) C:\Users\jagadeesh\venvs\frameworkenv\Scripts> deactivate
+
+  or
+  %USERPROFILE%\venvs\frameworkenv\Scripts\deactivate
+  ```
 
 ### macOS
+
 - Create an virtual env using venv module.
-    ```shell
-    tbd
-    ```
+  ```shell
+  tbd
+  ```
 - Activate the virtual env using 'activate' exe within Scripts dir.
-    ```shell
-    tbd
-    ```
+  ```shell
+  tbd
+  ```
 - Verify the Python version within new virtual env.
-    ```shell
-    tbd
-    ```
+
+  ```shell
+  tbd
+  ```
 
 - Deactivate the virtual env using the deactivate executable.
-    ```shell
-    tbd
-    ```
-  
+  ```shell
+  tbd
+  ```
+
+🌟 Make sure to be in venv
+`pip install pytest`
+
+### Run pytest
+
+```shell
+# less details
+pytest
+# test_widget.py .
+
+# more details
+pytest -v
+# test_widget.py::test_widget_functions_as_expected PASSED
+```
