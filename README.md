@@ -3,7 +3,7 @@
 All about the Pytest framework.
 
 <div align="center">
-  <img title="readme-cover" alt="" src="./docs/images/readme-cover-round-corner.png" width=48%>
+  <img title="readme-cover" alt="" src="./docs/images/readme-cover-round-corner.png" width=100%>
 </div>
 
 ## Virtual env setup
