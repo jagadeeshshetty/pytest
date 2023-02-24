@@ -159,6 +159,29 @@ FAILED test_with_pytest.py::test_always_fails - assert False
 ============================== 1 failed, 1 passed in 0.10s ===============================
 ```
 
+This is how we can use assert with pytest
+
+```python
+# test_assert_examples.py
+
+def test_uppercase():
+  assert "jagadeesh".upper() == "JAGADEESH"
+
+def test_reversed():
+  assert list(reversed([1,2,3,4])) == [4, 3, 2, 1]
+
+def test_some_primes():
+  assert 37 in {
+    num
+    for num in range(2,50)
+    if not any(num % div == 0 for div in range(2, num))
+  }
+```
+
+- Tbd
+  - https://realpython.com/pytest-python-testing/
+  - https://realpython.com/python-hash-table/
+
 ## Reference
 
 - [Effective Python Testing With Pytest](https://realpython.com/pytest-python-testing/)
